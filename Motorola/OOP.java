@@ -33,3 +33,26 @@ public class White extends Human {
        // only for white
    }
 }
+
+public class Yellow extends Human {
+    public void yellow_method() {
+        // only for yellow
+    }
+}
+
+
+
+public class PolymorphismExample {
+    public static void main(String[] args) {
+        Human y = new Yellow();
+        Human b = new Black();
+        Human w = new White();
+        
+        y.weight = 12;
+        b.weight = 10;
+        w.weight = 10;
+        
+        System.out.println(y.isEqualToPower(w));
+        System.out.println(b.isEqualToPower(w));
+    }
+}
